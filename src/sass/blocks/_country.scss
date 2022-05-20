@@ -1,0 +1,30 @@
+.country {
+    padding: 20px 0;
+    a {
+        color: #000;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(170px,auto));
+        column-gap: 33px;
+    }
+    &__item {
+        display: flex;
+    }
+    &__flag {
+        width: 28px;
+        height: 21px;
+        margin-right: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

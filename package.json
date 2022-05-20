@@ -25,5 +25,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "tiny-slider": "^2.9.4"
+  }
 }
