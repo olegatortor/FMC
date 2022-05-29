@@ -17,22 +17,21 @@
         text-transform: uppercase;
         font-size: 13px;
         font-weight: 700;
+        a:hover {
+            color: #00c2f0;
+        }
     }
     &__item {
         position: relative;
-        grid-template-columns: 530px 435px;
-        grid-template-rows: 591px;
+        grid-template-columns: minmax(300px, 530px) minmax(250px, 435px);
+        grid-template-rows: minmax(300px, 591px);
         justify-content: space-between;
         color: #fff;
-    }
-    .fade {
-        animation-name: fade;
-        animation-duration: .8s;
     }
     &__title {
         padding-top: 127px;
         font-size: 42px;
-        font-weight: 400;
+        font-weight: 900;
         line-height: 48px;
     }
     &__photo {
@@ -53,22 +52,6 @@
             text-transform: uppercase;
         }
     }
-    &__btn {
-        width: 240px;
-        height: 60px;
-        color: #Fff;
-        border: none;
-        box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
-        background: #00c2f0;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 30px;
-        cursor: pointer;
-        &:hover {
-            background: #00c0f0dc;
-        }
-    }
     .dots {
         display: flex;
         align-items: center;
@@ -79,7 +62,7 @@
     .prev, .next {
         cursor: pointer;
         border: solid #fff;
-        border-width: 0 2px 2px 0;
+        border-width: 0 1px 1px 0;
         display: inline-block;
         padding: 3px;
     }
@@ -96,12 +79,12 @@
         height: 11px;
         width: 11px;
         margin: 0 2px;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
         &__active, &:hover {
             background-color: #fff;
-            }
+        }
     }
 }

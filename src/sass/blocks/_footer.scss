@@ -1,0 +1,44 @@
+.footer {
+    margin-top: 80px;
+    min-height: 497px;
+    background-color: #0082a1;
+    color: #fff;
+    &__wrapper {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 377px 263px 117px 111px;
+        grid-template-rows: 314px 1px 13px;
+        justify-content: space-between;
+    }
+    hr {
+        margin-top: 44px;
+        grid-column: 1/5;
+        opacity: .3;
+    }
+    &_down {
+        margin-top: 80px;
+        grid-column: 1/5;
+        text-align: center;
+    }
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__img {
+        padding: 25px 0;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+    li {
+        padding-top: 4px;
+    }
+    a {
+        transition: all .5s;
+        &:hover {
+            opacity: .8;
+        }
+    }
+}

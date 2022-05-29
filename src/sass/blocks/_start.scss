@@ -1,0 +1,59 @@
+.start {
+    padding-top: 80px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__block {
+        position: absolute;
+        top: 0;
+        &_img {
+            padding: 20px;
+            transition: all .8s;
+            &:hover {
+                padding: 0;
+            }
+        }
+        &:before, &:after, &_img:before, &_img:after {
+            content: ' ';
+            position:absolute;
+            width: 40px; 
+            height: 40px;
+            border-color:#00c2f0; 
+            border-style: solid; 
+        }
+        &:before {
+            top: 0;
+            left: 0;
+            border-width: 2px 0 0 2px;
+            border-radius: 10% 0 0 0;
+        }
+        &:after {
+            top: 0;
+            right: 0;
+            border-width: 2px 2px 0 0;
+            border-radius: 0 10% 0 0;
+        }
+        &_img:before {
+            bottom: 0;
+            right: 0;
+            border-width: 0 2px 2px 0;
+            border-radius: 0 0 10% 0;
+        }
+        &_img:after {
+            bottom:0;
+            left:0;
+            border-width: 0 0 2px 2px;
+            border-radius: 0 0 0 10%;
+        }
+    }
+    .title {
+        margin-top: 350px;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+}
